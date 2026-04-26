@@ -1,0 +1,67 @@
+import { useEffect, useState, createContext } from "react";
+import api from "../services/api";
+
+export const ExpenseDataContext = createContext();
+
+const ExpenseContext = ({ children }) => {
+  const [expenses, setExpenses] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  // To get all expenses
+  const fetchExpenses = async () => {
+    setLoading(true);
+    setError("");
+
+    try {
+      const res = await api.get("/expenses");
+      setExpenses(res.data);
+    } catch (error) {
+      console.error(error);
+      setError("Failed to fetch expenses");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // After every change in expenses, this function will be called
+  useEffect(() => {
+    fetchExpenses();
+  }, []);
+
+  // to add expense
+  const addExpense = async (expense) => {
+    setError("");
+
+    try {
+      const res = await api.post("/expenses", expense);
+      setExpenses((prev) => [...prev, res.data]);
+    } catch (error) {
+      console.error(error);
+      setError("Failed to add expense");
+    }
+  };
+
+  // To delete expense
+  const deleteExpense = async (id) => {
+    setError("");
+
+    try {
+      await api.delete(`/expenses/${id}`);
+      setExpenses((prev) => prev.filter((e) => e.id !== id));
+    } catch (error) {
+      console.error(error);
+      setError("Failed to delete expense");
+    }
+  };
+
+  return (
+    <ExpenseDataContext.Provider
+      value={{ expenses, loading, error, addExpense, deleteExpense }}
+    >
+      {children}
+    </ExpenseDataContext.Provider>
+  );
+};
+
+export default ExpenseContext;

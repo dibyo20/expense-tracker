@@ -1,0 +1,12 @@
+{
+  "expenses": [
+    {
+      "title": "apple",
+      "amount": 100,
+      "category": "Food",
+      "date": "2026-03-31",
+      "id": "q51n9qKeGUw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
