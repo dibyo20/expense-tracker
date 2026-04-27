@@ -55,9 +55,29 @@ const ExpenseContext = ({ children }) => {
     }
   };
 
+  // To edit expense
+  const editExpense = async (id, expense) => {
+    setError("");
+
+    try {
+      const res = await api.patch(`/expenses/${id}`, expense);
+      setExpenses((prev) => prev.map((e) => (e.id === id ? res.data : e)));
+    } catch (error) {
+      console.error(error);
+      setError("Failed to edit expense");
+    }
+  };
+
   return (
     <ExpenseDataContext.Provider
-      value={{ expenses, loading, error, addExpense, deleteExpense }}
+      value={{
+        expenses,
+        loading,
+        error,
+        addExpense,
+        deleteExpense,
+        editExpense,
+      }}
     >
       {children}
     </ExpenseDataContext.Provider>

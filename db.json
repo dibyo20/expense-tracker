@@ -6,6 +6,20 @@
       "category": "Food",
       "date": "2026-03-31",
       "id": "q51n9qKeGUw"
+    },
+    {
+      "title": "mango",
+      "amount": 300,
+      "category": "Food",
+      "date": "2026-04-15",
+      "id": "Gx9Oa8D2riY"
+    },
+    {
+      "title": "manali",
+      "amount": 13000,
+      "category": "Transport",
+      "date": "2026-04-22",
+      "id": "hU35VGLcJFQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

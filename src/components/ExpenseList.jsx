@@ -3,7 +3,7 @@ import { ExpenseDataContext } from "../context/ExpenseContext";
 import "../styles/ExpenseList.scss";
 
 const ExpenseList = () => {
-  const { expenses, loading, error, deleteExpense } =
+  const { expenses, loading, error, deleteExpense, editExpense } =
     useContext(ExpenseDataContext);
 
   return (

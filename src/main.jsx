@@ -6,11 +6,9 @@ import { BrowserRouter } from "react-router-dom";
 import ExpenseContext from "./context/ExpenseContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <ExpenseContext>
-        <App />
-      </ExpenseContext>
-    </BrowserRouter>
-  </StrictMode>,
+  <BrowserRouter>
+    <ExpenseContext>
+      <App />
+    </ExpenseContext>
+  </BrowserRouter>,
 );
