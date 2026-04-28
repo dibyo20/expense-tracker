@@ -2,7 +2,7 @@
   "expenses": [
     {
       "title": "apple",
-      "amount": 100,
+      "amount": 20000,
       "category": "Food",
       "date": "2026-04-15",
       "type": "expense",
@@ -15,6 +15,30 @@
       "date": "2026-04-15",
       "type": "income",
       "id": "MSGomHze0Gk"
+    },
+    {
+      "title": "simla",
+      "amount": 100000,
+      "category": "Transport",
+      "date": "2026-04-22",
+      "type": "expense",
+      "id": "ORZzkucKP2M"
+    },
+    {
+      "title": "electricity",
+      "amount": 2000,
+      "category": "Bills",
+      "date": "2026-04-14",
+      "type": "expense",
+      "id": "E4VJmfAGQb0"
+    },
+    {
+      "title": "siliguri",
+      "amount": 4000,
+      "category": "Transport",
+      "date": "2026-04-14",
+      "type": "expense",
+      "id": "qtNlCRb1ZiA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

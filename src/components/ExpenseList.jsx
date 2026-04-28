@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { ExpenseDataContext } from "../context/ExpenseContext";
 import ExpenseItem from "./ExpenseItem.jsx";
 
-const ExpenseList = () => {
-  const { expenses, loading } = useContext(ExpenseDataContext);
+const ExpenseList = ({ expenses }) => {
+  const { loading } = useContext(ExpenseDataContext);
 
   if (loading) return <p>Loading...</p>;
 
