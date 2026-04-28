@@ -29,7 +29,7 @@ const ExpenseContext = ({ children }) => {
     fetchExpenses();
   }, []);
 
-  // to add expense
+  // To add expense
   const addExpense = async (expense) => {
     setError("");
 
@@ -70,6 +70,7 @@ const ExpenseContext = ({ children }) => {
     }
   };
 
+  // To refresh the page
   const handleRefresh = () => {
     window.location.reload();
   };

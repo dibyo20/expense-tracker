@@ -51,7 +51,6 @@ const ExpensePieChart = () => {
   return (
     <div className="chart-card">
       <h3>Expenses by Category</h3>
-
       <Pie data={data} options={options} />
     </div>
   );

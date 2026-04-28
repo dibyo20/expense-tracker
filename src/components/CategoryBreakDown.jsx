@@ -35,13 +35,11 @@ const CategoryBreakdown = () => {
 
         return (
           <div key={category} className="bar-item">
-            {/* Top Row */}
             <div className="bar-top">
               <span>{category}</span>
               <span>${value.toFixed(2)}</span>
             </div>
 
-            {/* Progress Bar */}
             <div className="bar-bg">
               <div
                 className="bar-fill"
