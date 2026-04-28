@@ -70,6 +70,10 @@ const ExpenseContext = ({ children }) => {
     }
   };
 
+  const handleRefresh = () => {
+    window.location.reload();
+  };
+
   return (
     <ExpenseDataContext.Provider
       value={{
@@ -79,6 +83,7 @@ const ExpenseContext = ({ children }) => {
         addExpense,
         deleteExpense,
         editExpense,
+        handleRefresh,
       }}
     >
       {children}

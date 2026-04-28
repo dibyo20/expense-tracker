@@ -5,7 +5,7 @@
       "amount": 20000,
       "category": "Food",
       "date": "2026-04-15",
-      "type": "expense",
+      "type": "income",
       "id": "2BEWBu6aMhY"
     },
     {
@@ -15,14 +15,6 @@
       "date": "2026-04-15",
       "type": "income",
       "id": "MSGomHze0Gk"
-    },
-    {
-      "title": "simla",
-      "amount": 100000,
-      "category": "Transport",
-      "date": "2026-04-22",
-      "type": "expense",
-      "id": "ORZzkucKP2M"
     },
     {
       "title": "electricity",
@@ -39,6 +31,14 @@
       "date": "2026-04-14",
       "type": "expense",
       "id": "qtNlCRb1ZiA"
+    },
+    {
+      "title": "darjeeling",
+      "amount": 2000,
+      "category": "Transport",
+      "date": "2026-04-15",
+      "type": "expense",
+      "id": "HoCcBnvaRoU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
