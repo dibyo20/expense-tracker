@@ -3,7 +3,6 @@ import { useState, useContext } from "react";
 import { ExpenseDataContext } from "../context/ExpenseContext";
 import ExpenseList from "../components/ExpenseList";
 import "../styles/DashBoard.scss";
-import Navbar from "../components/Navbar";
 import DashboardHeader from "../components/DashboardHeader";
 import SummaryCards from "../components/SummaryCards";
 import TransactionControls from "../components/TransactionControls";
@@ -27,7 +26,6 @@ const DashBoard = () => {
 
   return (
     <>
-      <Navbar />
 
       <div className="dashboard">
         <div className="dashboard-header">

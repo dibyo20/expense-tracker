@@ -35,6 +35,7 @@ const TransactionControls = ({
           <option value="Transport">Transport</option>
           <option value="Shopping">Shopping</option>
           <option value="Bills">Bills</option>
+          <option value="Entertainment">Entertainment</option>
         </select>
       </div>
     </div>

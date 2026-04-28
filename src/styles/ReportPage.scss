@@ -1,0 +1,28 @@
+.reports-page {
+  max-width: 100%;  
+  margin: 0 auto;      
+  padding: 20px 290px 50px;
+  background: #020617;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;           
+}
+
+
+.reports-page h2 {
+  color: #3b82f6;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.charts-section {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 900px) {
+  .charts-section {
+    grid-template-columns: 1fr 1fr; 
+  }
+}

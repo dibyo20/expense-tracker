@@ -39,6 +39,22 @@
       "date": "2026-04-15",
       "type": "expense",
       "id": "HoCcBnvaRoU"
+    },
+    {
+      "title": "T-shirts",
+      "amount": 500,
+      "category": "Shopping",
+      "date": "2026-04-08",
+      "type": "expense",
+      "id": "BR4qcXkS-2E"
+    },
+    {
+      "title": "movie",
+      "amount": 400,
+      "category": "Entertainment",
+      "date": "2026-04-07",
+      "type": "expense",
+      "id": "hrhzBV8-zxc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
