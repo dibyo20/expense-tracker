@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
+import { useContext } from "react";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
 import { useNavigate } from "react-router-dom";
 import { Pencil, Trash2 } from "lucide-react";
 import "../styles/ExpenseItem.scss";
@@ -21,7 +21,7 @@ const ExpenseItem = ({ expense }) => {
 
       <div className="right">
         <span className={isIncome ? "income" : "expense"}>
-          {isIncome ? "+" : "-"}₹{Math.abs(expense.amount) + ".00"}
+          {isIncome ? "+" : "-"}₹{Math.abs(expense.amount)}
         </span>
 
         <div className="actions">

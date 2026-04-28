@@ -1,5 +1,5 @@
-import React, { useContext, useState, useEffect } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
+import { useContext, useState, useEffect } from "react";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
 import "../styles/ExpenseForm.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -61,7 +61,7 @@ const ExpenseForm = ({ initialData, onCancel, isEdit }) => {
         alert("Updated successfully");
       } else {
         await addExpense(data);
-        alert("Added successfully");
+        // alert("Added successfully");
       }
 
       navigate("/");

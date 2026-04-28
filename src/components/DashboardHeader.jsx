@@ -1,9 +1,9 @@
 import "../styles/DashboardHeader.scss";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
 
-const DashboardHeader = ({ onRefresh }) => {
+const DashboardHeader = () => {
   const { handleRefresh, loading } = useContext(ExpenseDataContext);
   const navigate = useNavigate();
   return (

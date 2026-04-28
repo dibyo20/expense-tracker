@@ -1,5 +1,5 @@
 import { useEffect, useState, createContext } from "react";
-import api from "../services/api";
+import api from "../services/api.js";
 
 export const ExpenseDataContext = createContext();
 

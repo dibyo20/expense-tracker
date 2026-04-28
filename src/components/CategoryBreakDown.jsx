@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
-import "../styles/CategoryBreakdown.scss";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
+import "../styles/CategoryBreakDown.scss";
 
 const COLORS = {
   Food: "#00C49F",

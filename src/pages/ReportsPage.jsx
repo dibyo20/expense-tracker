@@ -1,7 +1,6 @@
-import Navbar from "../components/Navbar";
-import ReportCards from "../components/ReportCards";
-import ExpensePieChart from "../components/ExpensePieChart";
-import CategoryBreakdown from "../components/CategoryBreakdown";
+import ReportCards from "../components/ReportCards.jsx";
+import ExpensePieChart from "../components/ExpensePieChart.jsx";
+import CategoryBreakDown from "../components/CategoryBreakDown.jsx";
 import "../styles/ReportPage.scss";
 
 const Reports = () => {
@@ -16,7 +15,7 @@ const Reports = () => {
           <ExpensePieChart />
         </div>
 
-        <CategoryBreakdown />
+        <CategoryBreakDown />
       </div>
     </>
   );

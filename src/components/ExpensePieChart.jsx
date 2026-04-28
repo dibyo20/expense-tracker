@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
 import { Pie } from "react-chartjs-2";
 import "../styles/ExpensePieChart.scss";
 

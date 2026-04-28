@@ -1,17 +1,15 @@
-import { useNavigate } from "react-router-dom";
 import { useState, useContext } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
-import ExpenseList from "../components/ExpenseList";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
+import ExpenseList from "../components/ExpenseList.jsx";
 import "../styles/DashBoard.scss";
-import DashboardHeader from "../components/DashboardHeader";
-import SummaryCards from "../components/SummaryCards";
-import TransactionControls from "../components/TransactionControls";
+import DashboardHeader from "../components/DashboardHeader.jsx";
+import SummaryCards from "../components/SummaryCards.jsx";
+import TransactionControls from "../components/TransactionControls.jsx";
 
 const DashBoard = () => {
   const { expenses } = useContext(ExpenseDataContext);
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const navigate = useNavigate();
 
   const filteredExpenses = expenses.filter((expense) => {
     const matchesSearch =
@@ -20,7 +18,6 @@ const DashBoard = () => {
 
     const matchesCategory =
       selectedCategory === "All" || expense.category === selectedCategory;
-    console.log(selectedCategory);
     return matchesSearch && matchesCategory;
   });
 

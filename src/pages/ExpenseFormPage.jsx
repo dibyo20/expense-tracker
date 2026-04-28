@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { ExpenseDataContext } from "../context/ExpenseContext";
-import ExpenseForm from "../components/ExpenseForm";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
+import ExpenseForm from "../components/ExpenseForm.jsx";
 
 const ExpenseFormPage = () => {
   const { id } = useParams();

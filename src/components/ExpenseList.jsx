@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
+import { useContext } from "react";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
 import ExpenseItem from "./ExpenseItem.jsx";
 
 const ExpenseList = ({ expenses }) => {

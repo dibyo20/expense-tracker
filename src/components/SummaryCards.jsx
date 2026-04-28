@@ -1,6 +1,6 @@
 import "../styles/SummaryCard.scss";
 import { useContext } from "react";
-import { ExpenseDataContext } from "../context/ExpenseContext";
+import { ExpenseDataContext } from "../context/ExpenseContext.jsx";
 
 const SummaryCards = () => {
   const { expenses } = useContext(ExpenseDataContext);
