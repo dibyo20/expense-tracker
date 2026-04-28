@@ -1,21 +1,32 @@
-import ExpenseForm from "../components/ExpenseForm";
+import { useNavigate } from "react-router-dom";
 import ExpenseList from "../components/ExpenseList";
 import "../styles/DashBoard.scss";
+import Navbar from "../components/Navbar";
+import DashboardHeader from "../components/DashboardHeader";
+import SummaryCards from "../components/SummaryCards";
+import TransactionControls from "../components/TransactionControls";
 
 const DashBoard = () => {
-  return (
-    <div className="dashboard">
-      <div className="dashboard-left">
-        <ExpenseForm />
-      </div>
+  const navigate = useNavigate();
 
-      <div className="dashboard-right">
-        <h2>Transaction History</h2>
-        <div className="expense-list-container">
-          <ExpenseList />
+  return (
+    <>
+      <Navbar />
+
+      <div className="dashboard">
+        <div className="dashboard-header">
+          <DashboardHeader />
+          <SummaryCards />
+        </div>
+
+        <div className="transactions">
+          <div className="expense-list-container">
+            <TransactionControls />
+            <ExpenseList />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

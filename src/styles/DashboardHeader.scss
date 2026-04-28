@@ -1,0 +1,38 @@
+.header-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+  .das-div{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    color: var(--text-main);
+  }
+
+  .actions {
+    display: flex;
+    gap: 12px;
+
+    button {
+      padding: 15px 30px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-main);
+      cursor: pointer;
+      font-size: medium;
+    }
+
+    .add-btn {
+      background: var(--primary);
+      border: none;
+      color: white;
+    }
+  }
+}

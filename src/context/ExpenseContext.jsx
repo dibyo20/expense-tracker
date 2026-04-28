@@ -36,6 +36,7 @@ const ExpenseContext = ({ children }) => {
     try {
       const res = await api.post("/expenses", expense);
       setExpenses((prev) => [...prev, res.data]);
+      return res.data;
     } catch (error) {
       console.error(error);
       setError("Failed to add expense");
@@ -62,6 +63,7 @@ const ExpenseContext = ({ children }) => {
     try {
       const res = await api.patch(`/expenses/${id}`, expense);
       setExpenses((prev) => prev.map((e) => (e.id === id ? res.data : e)));
+      return res.data;
     } catch (error) {
       console.error(error);
       setError("Failed to edit expense");

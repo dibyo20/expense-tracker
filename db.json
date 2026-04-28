@@ -4,22 +4,17 @@
       "title": "apple",
       "amount": 100,
       "category": "Food",
-      "date": "2026-03-31",
-      "id": "q51n9qKeGUw"
+      "date": "2026-04-15",
+      "type": "expense",
+      "id": "2BEWBu6aMhY"
     },
     {
       "title": "mango",
-      "amount": 300,
+      "amount": 3000,
       "category": "Food",
       "date": "2026-04-15",
-      "id": "Gx9Oa8D2riY"
-    },
-    {
-      "title": "manali",
-      "amount": 13000,
-      "category": "Transport",
-      "date": "2026-04-22",
-      "id": "hU35VGLcJFQ"
+      "type": "income",
+      "id": "MSGomHze0Gk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

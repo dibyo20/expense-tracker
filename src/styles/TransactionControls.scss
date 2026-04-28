@@ -1,0 +1,55 @@
+.transaction-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  padding: 12px 14px;
+
+  input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-main);
+    font-size: 14px;
+  }
+
+  svg {
+    color: var(--primary);
+  }
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  padding: 12px 14px;
+
+  select {
+    background: #0f1b2d;
+    border: none;
+    color: var(--text-main);
+    outline: none;
+    cursor: pointer;
+  }
+
+  svg {
+    color: var(--primary);
+  }
+}

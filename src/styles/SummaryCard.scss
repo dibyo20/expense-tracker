@@ -1,0 +1,29 @@
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+  width: 65%;
+  align-self: center;
+
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 30px;
+    border-radius: 12px;
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: var(--primary);
+    }
+
+    .expense {
+      color: var(--danger);
+    }
+  }
+}

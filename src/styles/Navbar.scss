@@ -1,0 +1,42 @@
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+
+  background: var(--bg-dark);
+  border-bottom: 1px solid var(--border);
+
+  .logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary);
+  }
+
+  .nav-div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 65%;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+
+    a {
+      color: var(--text-muted);
+      text-decoration: none;
+      position: relative;
+
+      &:hover {
+        color: var(--text-main);
+      }
+
+      &.active {
+        color: var(--primary);
+      }
+    }
+  }
+}

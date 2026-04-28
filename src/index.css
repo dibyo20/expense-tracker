@@ -9,3 +9,7 @@ body {
   background-color: black;
   color: white;
 }
+
+.page-content {
+  padding: 30px 40px;
+}

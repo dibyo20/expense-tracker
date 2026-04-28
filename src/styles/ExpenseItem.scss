@@ -1,0 +1,94 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  padding: 18px 20px;
+  margin-bottom: 16px;
+
+  transition: all 0.25s ease;
+
+  &:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 1px var(--primary-soft);
+  }
+
+  .left {
+    h4 {
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+
+      span {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .income {
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .expense {
+      color: var(--danger);
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+
+      opacity: 0;
+      transform: translateX(10px);
+      transition: all 0.2s ease;
+
+      button {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text-main);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          border-color: var(--primary);
+          color: var(--primary);
+        }
+      }
+
+      .delete:hover {
+        border-color: var(--danger);
+        color: var(--danger);
+      }
+    }
+  }
+
+  &:hover .actions {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.expense-list {
+  margin-top: 10px;
+}
